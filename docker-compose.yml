@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  backend:
+      build: .
+      ports:
+          - 8000:80
+          - 8001:81
+      environment:
+          APP_PORT: 80
+          APP_DEV_PORT: 81
+      volumes:
+          - ./:/var/www
+      command: "npm run dev"
