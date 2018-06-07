@@ -28,5 +28,5 @@ if (!isProduction) {
   app.use(express.static("dist/frontend"));
 }
 
-const PORT = AppConf.get("APP_PORT") || 8009;
+const PORT = AppConf.get("APP_PORT") || 8000;
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
